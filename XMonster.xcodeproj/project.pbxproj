@@ -14,6 +14,11 @@
 		44ADBC1F2587C2F400F3CCEB /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44ADBC1E2587C2F400F3CCEB /* GameViewController.swift */; };
 		44ADBC222587C2F400F3CCEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44ADBC202587C2F400F3CCEB /* Main.storyboard */; };
 		44ADBC242587C2F900F3CCEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44ADBC232587C2F900F3CCEB /* Assets.xcassets */; };
+		44ADBC2E2587C3F100F3CCEB /* shuttle in Resources */ = {isa = PBXBuildFile; fileRef = 44ADBC2D2587C3F100F3CCEB /* shuttle */; };
+		44ADBC312587C40500F3CCEB /* 178141.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44ADBC302587C40500F3CCEB /* 178141.jpg */; };
+		44ADBC342587C40C00F3CCEB /* clipart1307944.png in Resources */ = {isa = PBXBuildFile; fileRef = 44ADBC332587C40C00F3CCEB /* clipart1307944.png */; };
+		44ADBC372587C9D000F3CCEB /* boom.wav in Resources */ = {isa = PBXBuildFile; fileRef = 44ADBC362587C9D000F3CCEB /* boom.wav */; };
+		44ADBC3A2587C9DA00F3CCEB /* bgmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 44ADBC392587C9DA00F3CCEB /* bgmusic.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		44ADBC212587C2F400F3CCEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		44ADBC232587C2F900F3CCEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44ADBC252587C2F900F3CCEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44ADBC2D2587C3F100F3CCEB /* shuttle */ = {isa = PBXFileReference; lastKnownFileType = file; path = shuttle; sourceTree = "<group>"; };
+		44ADBC302587C40500F3CCEB /* 178141.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 178141.jpg; sourceTree = "<group>"; };
+		44ADBC332587C40C00F3CCEB /* clipart1307944.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clipart1307944.png; sourceTree = "<group>"; };
+		44ADBC362587C9D000F3CCEB /* boom.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = boom.wav; sourceTree = "<group>"; };
+		44ADBC392587C9DA00F3CCEB /* bgmusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgmusic.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,15 +69,28 @@
 			isa = PBXGroup;
 			children = (
 				44ADBC162587C2F400F3CCEB /* AppDelegate.swift */,
+				44ADBC2C2587C3C000F3CCEB /* sprites.atlas */,
 				44ADBC182587C2F400F3CCEB /* GameScene.sks */,
 				44ADBC1A2587C2F400F3CCEB /* Actions.sks */,
 				44ADBC1C2587C2F400F3CCEB /* GameScene.swift */,
 				44ADBC1E2587C2F400F3CCEB /* GameViewController.swift */,
 				44ADBC202587C2F400F3CCEB /* Main.storyboard */,
+				44ADBC2D2587C3F100F3CCEB /* shuttle */,
 				44ADBC232587C2F900F3CCEB /* Assets.xcassets */,
 				44ADBC252587C2F900F3CCEB /* Info.plist */,
 			);
 			path = XMonster;
+			sourceTree = "<group>";
+		};
+		44ADBC2C2587C3C000F3CCEB /* sprites.atlas */ = {
+			isa = PBXGroup;
+			children = (
+				44ADBC302587C40500F3CCEB /* 178141.jpg */,
+				44ADBC332587C40C00F3CCEB /* clipart1307944.png */,
+				44ADBC392587C9DA00F3CCEB /* bgmusic.mp3 */,
+				44ADBC362587C9D000F3CCEB /* boom.wav */,
+			);
+			path = sprites.atlas;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,8 +152,13 @@
 			files = (
 				44ADBC222587C2F400F3CCEB /* Main.storyboard in Resources */,
 				44ADBC192587C2F400F3CCEB /* GameScene.sks in Resources */,
+				44ADBC2E2587C3F100F3CCEB /* shuttle in Resources */,
+				44ADBC312587C40500F3CCEB /* 178141.jpg in Resources */,
+				44ADBC3A2587C9DA00F3CCEB /* bgmusic.mp3 in Resources */,
 				44ADBC242587C2F900F3CCEB /* Assets.xcassets in Resources */,
+				44ADBC342587C40C00F3CCEB /* clipart1307944.png in Resources */,
 				44ADBC1B2587C2F400F3CCEB /* Actions.sks in Resources */,
+				44ADBC372587C9D000F3CCEB /* boom.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

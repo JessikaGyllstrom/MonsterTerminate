@@ -8,28 +8,43 @@
 import UIKit
 import SpriteKit
 import GameplayKit
+import AVFoundation
 
 class GameViewController: UIViewController {
-
+    
+    var audioPlayer = AVAudioPlayer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let view = self.view as! SKView? {
-            // Load the SKScene from 'GameScene.sks'
-            if let scene = SKScene(fileNamed: "GameScene") {
-                // Set the scale mode to scale to fit the window
-                scene.scaleMode = .aspectFill
-                
-                // Present the scene
-                view.presentScene(scene)
-            }
-            
-            view.ignoresSiblingOrder = true
-            
-            view.showsFPS = true
-            view.showsNodeCount = true
-        }
+       
+        
     }
+override func viewWillLayoutSubviews() {
+    
+    do {
+        audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "bgmusic", ofType: "mp3")!))
+        
+    }
+    catch{
+        print(error)
+        
+    }
+    audioPlayer.numberOfLoops = -1
+    audioPlayer.prepareToPlay()
+    audioPlayer.play()
+    
+    var skView:SKView = self.view as! SKView
+    skView.showsFPS = true
+    skView.showsNodeCount = true
+    
+    var scene:SKScene = GameScene(size: skView.bounds.size)
+    scene.scaleMode = SKSceneScaleMode.aspectFill
+    skView.presentScene(scene)
+    
+
+}
+    
 
     override var shouldAutorotate: Bool {
         return true
